@@ -7,11 +7,45 @@ import DesktopNav from "./DesktopNav";
 
 export interface NavItem {
   name: string;
-  subTopics: string[];
+  subTopics: {
+    category: string;
+    iconName: string;
+    subCategories: string[];
+  }[];
 }
 
 const navItems: NavItem[] = [
-  { name: "موضوعات", subTopics: ["TODO: add subTopics"] },
+  {
+    name: "موضوعات",
+    subTopics: [
+      {
+        category: "درسی",
+        iconName: "edu",
+        subCategories: [
+          "پایه اول",
+          "پایه دوم",
+          "پایه سوم",
+          "پایه چهارم",
+          "پایه پنجم",
+          "پایه ششم",
+          "پایه هفتم",
+          "پایه هشتم",
+          "پایه نهم",
+          "پایه دهم",
+          "پایه یازدهم",
+          "پایه دوازدهم",
+          "تحصیلات تکمیلی",
+          "کارشناسی ارشد",
+          "مقطع دکترا",
+        ],
+      },
+      { category: "زبان", iconName: "lang", subCategories: [] },
+      { category: "هنر", iconName: "art", subCategories: [] },
+      { category: "ورزش", iconName: "sport", subCategories: [] },
+      { category: "مهارت", iconName: "skill", subCategories: [] },
+      { category: "تکنولوژی", iconName: "tech", subCategories: [] },
+    ],
+  },
   { name: "درباره ما", subTopics: [] },
   { name: "تماس با ما", subTopics: [] },
   { name: "سوالات متداول", subTopics: [] },

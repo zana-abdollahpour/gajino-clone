@@ -12,6 +12,11 @@ const config: Config = {
         primary: {
           600: "#29AFBD",
         },
+        accent: {
+          50: "#F4f2f5",
+          300: "#9689A8",
+          500: "#534667",
+        },
         gray: {
           150: "#EFEDF2",
           200: "#ECEAEF",

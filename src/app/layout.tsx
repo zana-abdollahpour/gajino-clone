@@ -49,7 +49,7 @@ export default function RootLayout({
       <body className={`${shabnamFont.className} bg-gray-150 text-primary-600`}>
         <div className="mx-auto max-w-[120rem]">
           <Header />
-          {children}
+          <main className="mx-auto mt-32 h-screen w-10/12">{children}</main>
         </div>
       </body>
     </html>

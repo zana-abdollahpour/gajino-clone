@@ -28,7 +28,7 @@ export default function MobileNavButton({ children }: MobileNavButtonProps) {
       {createPortal(
         <aside
           onClick={handleToggle}
-          className={`fixed top-0 z-10 h-screen w-screen bg-black/50 transition-all duration-500 lg:hidden ${navIsOpen ? "right-0 w-full opacity-100" : "-right-full w-0 opacity-0"}`}
+          className={`fixed top-0 z-20 h-screen w-screen bg-black/50 transition-all duration-500 lg:hidden ${navIsOpen ? "right-0 w-full opacity-100" : "-right-full w-0 opacity-0"}`}
         >
           {children}
         </aside>,

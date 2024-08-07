@@ -53,7 +53,7 @@ const navItems: NavItem[] = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 flex h-14 w-full max-w-[120rem] items-center justify-between bg-white p-6 lg:px-24 lg:py-10">
+    <header className="sticky top-0 z-10 flex h-14 w-full max-w-[120rem] items-center justify-between bg-white p-6 lg:px-24 lg:py-10">
       <MobileNavButton>
         <MobileMenu navItems={navItems} />
       </MobileNavButton>

@@ -14,7 +14,11 @@ const config: Config = {
         },
         gray: {
           150: "#EFEDF2",
+          200: "#ECEAEF",
         },
+      },
+      height: {
+        screen: "100dvh",
       },
     },
   },

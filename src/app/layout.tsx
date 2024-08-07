@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
+import Header from "@/components/header/Header";
+
 const shabnamFont = localFont({
   src: [
     {
@@ -44,7 +46,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={shabnamFont.className}>{children}</body>
+      <body className={`${shabnamFont.className} bg-gray-150 text-primary-600`}>
+        <div className="mx-auto max-w-[120rem]">
+          <Header />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

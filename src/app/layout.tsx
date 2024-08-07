@@ -45,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fa" dir="rtl">
       <body className={`${shabnamFont.className} bg-gray-150 text-primary-600`}>
         <div className="mx-auto max-w-[120rem]">
           <Header />

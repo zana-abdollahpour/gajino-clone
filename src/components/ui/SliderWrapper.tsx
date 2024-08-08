@@ -18,11 +18,7 @@ export default function SliderWrapper({
 }: SliderWrapperProps) {
   return (
     <div>
-      <Swiper
-        breakpoints={breakPoints}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
+      <Swiper breakpoints={breakPoints}>
         {Children.map(children, (child) => (
           <SwiperSlide>{child}</SwiperSlide>
         ))}

@@ -20,7 +20,7 @@ const categories = [
 
 export default function Categories() {
   return (
-    <section className="grid grid-cols-2 gap-6 lg:grid-cols-3 lg:gap-10">
+    <section className="mx-auto grid w-10/12 grid-cols-2 gap-6 lg:grid-cols-3 lg:gap-10">
       {categories.map((category) => (
         <Link href="#" key={category.name}>
           <Card alt={category.name} src={category.img}>

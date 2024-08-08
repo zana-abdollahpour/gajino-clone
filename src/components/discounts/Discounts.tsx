@@ -33,7 +33,7 @@ const discountOffers = [
 
 export default function Discounts() {
   return (
-    <div className="mt-16 hidden grid-cols-3 gap-10 md:grid">
+    <div className="mx-auto mt-12 hidden w-10/12 grid-cols-3 gap-10 md:grid">
       {discountOffers.map((offer) => (
         <div className="relative w-fit" key={offer.title}>
           <Image

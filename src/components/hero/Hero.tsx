@@ -13,7 +13,7 @@ export default function Hero() {
           className="h-full w-full object-cover"
         />
       </div>
-      <div className="w-full text-center">
+      <div className="mx-auto w-10/12 text-center">
         <h1 className="mb-4 text-xl font-bold text-white md:text-2xl xl:text-4xl">
           دنبال یاد گرفتن چی با کی هستی؟
         </h1>

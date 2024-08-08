@@ -27,7 +27,7 @@ export default function MoreCategories() {
         {moreCategories.map((category, i) => (
           <div
             key={category.name}
-            className={`max-w-72 ${i % 2 === 0 ? "-translate-y-12" : "translate-y-20"} pb-20 pt-12`}
+            className={`max-w-72 ${i % 2 === 0 ? "sm:-translate-y-12" : "sm:translate-y-20"} sm:pb-20 sm:pt-12`}
           >
             <Card src={category.image} alt={category.name}>
               <span className="inline-block py-4 text-accent-500">

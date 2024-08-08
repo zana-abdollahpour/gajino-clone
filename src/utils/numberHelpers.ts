@@ -8,3 +8,7 @@ export function convertToIranianCurrency(num: number): string {
   // To remove the ریال part
   return formattedNumber.slice(6, formattedNumber.length);
 }
+
+export function convertToIranianNumber(num: number): string {
+  return new Intl.NumberFormat("fa", {}).format(num);
+}

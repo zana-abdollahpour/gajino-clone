@@ -26,7 +26,8 @@ const config: Config = {
         screen: "100dvh",
       },
       boxShadow: {
-        base: "0px 0px 60px -40px rgba(0, 0, 0, 1);",
+        base: "0px 0px 60px -40px rgba(0, 0, 0, 1)",
+        large: "0px 0px 140px -10px rgba(0, 0, 0, 0.1)",
       },
     },
   },

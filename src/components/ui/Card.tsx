@@ -16,10 +16,10 @@ export default function Card({
 }: CardProps) {
   return (
     <div
-      className={`w-full overflow-hidden rounded-xl bg-white ${imageType === "circular" ? "w-[21.25rem]" : "min-w-[9.75rem] max-w-[28.75rem]"}`}
+      className={`h-full w-full overflow-hidden rounded-xl bg-white ${imageType === "circular" ? "min-w-[9.75rem] max-w-[21.25rem]" : "min-w-[9.75rem] max-w-[28.75rem]"}`}
     >
       <div
-        className={`relative bg-green-300 ${imageType === "circular" ? "shadow-base mx-auto mt-8 h-44 w-44 overflow-hidden rounded-full" : "max-h-64 w-full"}`}
+        className={`relative ${imageType === "circular" ? "shadow-base mx-auto mt-8 aspect-square w-14 overflow-hidden rounded-full sm:w-44" : "max-h-64 w-full"}`}
       >
         <Image
           src={src}

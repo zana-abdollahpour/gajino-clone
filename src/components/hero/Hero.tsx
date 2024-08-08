@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { MagnifyingGlassIcon, MapPinIcon } from "@heroicons/react/16/solid";
 
-import heroBg from "./hero-bg.png";
+import heroBg from "./img/hero-bg.png";
 
 export default function Hero() {
   return (

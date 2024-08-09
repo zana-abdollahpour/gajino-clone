@@ -19,12 +19,13 @@ export default function Card({
       className={`h-full w-full overflow-hidden rounded-xl bg-white ${imageType === "circular" ? "min-w-[9.75rem] max-w-[21.25rem]" : "min-w-[9.75rem] max-w-[28.75rem]"}`}
     >
       <div
-        className={`relative ${imageType === "circular" ? "shadow-base mx-auto mt-8 aspect-square w-14 overflow-hidden rounded-full sm:w-44" : "after:bg-accent-800/30 max-h-64 w-full after:absolute after:left-0 after:top-0 after:h-full after:w-full after:content-['']"}`}
+        className={`relative ${imageType === "circular" ? "mx-auto mt-8 aspect-square w-14 overflow-hidden rounded-full shadow-base sm:w-44" : "max-h-64 w-full after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-accent-800/30 after:content-['']"}`}
       >
         <Image
           src={src}
           alt={alt}
           className={`${imageType === "circular" ? "object-cover" : ""}`}
+          placeholder="blur"
           fill={imageType === "circular"}
         />
       </div>

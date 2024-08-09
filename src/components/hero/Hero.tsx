@@ -5,7 +5,7 @@ import heroBg from "./img/hero-bg.png";
 
 export default function Hero() {
   return (
-    <section>
+    <section className="mt-11 sm:mt-[4.75rem] md:mt-20 lg:mt-[6.5rem] xl:mt-24">
       <div className="absolute right-1/2 top-14 -z-10 h-56 w-screen max-w-[120rem] translate-x-1/2 sm:h-96 md:h-[28rem] lg:h-[32rem] xl:h-[38rem]">
         <Image
           src={heroBg}

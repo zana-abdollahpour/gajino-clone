@@ -16,14 +16,16 @@ export default function MobileNavButton({ children }: MobileNavButtonProps) {
     setNavIsOpen((prev) => !prev);
   };
 
-  return (
+  if (typeof window === "undefined") return;
+
+  return document ? (
     <div
       className="flex h-6 w-5 cursor-pointer flex-col justify-center gap-1 lg:hidden"
       onClick={handleToggle}
     >
-      <div className="bg-primary-600 -z-10 h-[3px] w-full rounded-full" />
-      <div className="bg-primary-600 -z-10 h-[3px] w-full rounded-full" />
-      <div className="bg-primary-600 -z-10 h-[3px] w-full rounded-full" />
+      <div className="-z-10 h-[3px] w-full rounded-full bg-primary-600" />
+      <div className="-z-10 h-[3px] w-full rounded-full bg-primary-600" />
+      <div className="-z-10 h-[3px] w-full rounded-full bg-primary-600" />
 
       {createPortal(
         <aside
@@ -35,5 +37,5 @@ export default function MobileNavButton({ children }: MobileNavButtonProps) {
         document.body,
       )}
     </div>
-  );
+  ) : null;
 }

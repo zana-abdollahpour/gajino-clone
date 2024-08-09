@@ -30,6 +30,10 @@ const config: Config = {
         base: "0px 0px 60px -40px rgba(0, 0, 0, 1)",
         large: "0px 0px 140px -10px rgba(0, 0, 0, 0.1)",
       },
+      backgroundImage: {
+        "gray-gradient":
+          "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(233,233,233,1) 10%, rgba(255,255,255,0.8) 25%, rgba(255,255,255,1) 100%)",
+      },
     },
   },
   plugins: [],

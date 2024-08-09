@@ -12,3 +12,7 @@ export function convertToIranianCurrency(num: number): string {
 export function convertToIranianNumber(num: number): string {
   return new Intl.NumberFormat("fa", {}).format(num);
 }
+
+export function convertNumsInStringToIranian(str: string) {
+  return str.replace(/\d/g, (d) => "۰۱۲۳۴۵۶۷۸۹"[+d]);
+}

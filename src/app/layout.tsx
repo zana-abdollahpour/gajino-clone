@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 const shabnamFont = localFont({
   src: [
@@ -49,9 +50,10 @@ export default function RootLayout({
       <body className={`${shabnamFont.className} bg-gray-150 text-primary-600`}>
         <div className="mx-auto max-w-[120rem]">
           <Header />
-          <main className="mx-auto mt-32 flex h-screen flex-col gap-28 sm:mt-64 md:mt-[22rem] lg:mt-[24rem] xl:mt-[30rem]">
+          <div className="mx-auto mt-32 flex h-screen flex-col gap-28 sm:mt-64 md:mt-[22rem] lg:mt-[24rem] xl:mt-[30rem]">
             {children}
-          </main>
+            <Footer />
+          </div>
         </div>
       </body>
     </html>

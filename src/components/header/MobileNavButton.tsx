@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { MouseEventHandler } from "react";
 
 interface MobileNavButtonProps {
@@ -10,14 +10,10 @@ interface MobileNavButtonProps {
 export default function MobileNavButton({ children }: MobileNavButtonProps) {
   const [navIsOpen, setNavIsOpen] = useState<boolean>(false);
 
-  // prevents user from scrolling when navbar in mobile is open
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    window.document.body.classList.toggle("overflow-hidden");
-  }, [navIsOpen]);
-
   const handleToggle: MouseEventHandler<HTMLDivElement> = (e) => {
     if (e.target !== e.currentTarget) return;
+    // prevents user from scrolling when navbar in mobile is open
+    window.document.body.classList.toggle("overflow-hidden");
     setNavIsOpen((prev) => !prev);
   };
 

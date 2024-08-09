@@ -1,11 +1,12 @@
+import { ChevronRightIcon, StarIcon } from "@heroicons/react/16/solid";
+import { convertToIranianNumber } from "@/utils/numberHelpers";
+
 import Card from "@/components/ui/Card";
 
 import alirezaImage from "./img/alireza-m.png";
 import bahramImage from "./img/bahram-mr.png";
 import minaImage from "./img/mina-jzh.png";
 import pezhmanImage from "./img/pezhman-n.png";
-import { ChevronRightIcon, StarIcon } from "@heroicons/react/16/solid";
-import { convertToIranianNumber } from "@/utils/numberHelpers";
 
 const topTeachers = [
   {

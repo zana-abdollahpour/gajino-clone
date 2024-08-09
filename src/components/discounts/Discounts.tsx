@@ -1,11 +1,12 @@
-import Card from "../ui/Card";
+import Image from "next/image";
+
+import Card from "@/components/ui/Card";
 import { convertToIranianCurrency } from "@/utils/numberHelpers";
 
 import sculptingImage from "./img/sculpting.png";
 import guitarImage from "./img/guitar.png";
 import basketballImage from "./img/basketball.png";
 import discountIcon from "./img/discount.svg";
-import Image from "next/image";
 
 const discountOffers = [
   {

@@ -11,6 +11,8 @@ export default function Hero() {
           src={heroBg}
           alt="background"
           className="h-full w-full object-cover"
+          placeholder="blur"
+          quality={95}
         />
       </div>
       <div className="mx-auto w-10/12 text-center">

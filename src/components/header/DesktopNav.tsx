@@ -30,16 +30,14 @@ function DesktopNavItem({ navItem }: DesktopNavItemProps) {
     return (
       <Link
         href="#"
-        className={`group/category relative flex items-center justify-between gap-2 font-bold transition-all hover:text-accent-500 ${navItem.subTopics.length ? "h-20" : ""}`}
+        className="group/category gap-2bg-blue-300 relative flex h-fit items-center justify-between p-1 font-bold transition-all hover:text-accent-500"
       >
         {navItem.name}
       </Link>
     );
 
   return (
-    <div
-      className={`group/category relative flex items-center justify-between gap-2 font-bold transition-all hover:text-accent-500 ${navItem.subTopics.length ? "h-20" : ""}`}
-    >
+    <div className="group/category relative flex h-20 cursor-pointer items-center justify-between gap-2 font-bold transition-all hover:text-accent-500">
       {navItem.name}
       <ChevronDownIcon className="h-5 w-5 cursor-pointer rounded-full transition-all group-hover/category:rotate-180 group-hover/category:text-accent-500" />
       <div className="absolute right-0 top-full hidden border-t border-primary-600 bg-white group-hover/category:block">
@@ -50,7 +48,7 @@ function DesktopNavItem({ navItem }: DesktopNavItemProps) {
           >
             <button
               type="button"
-              className="hover:bg-accent-100 group/btn block h-full w-full bg-white px-4 text-start transition-all hover:bg-accent-50"
+              className="hover:bg-accent-100 group/btn block h-full w-full px-4 text-start transition-all hover:bg-accent-50"
             >
               <Image
                 src={`sub-topics/${subTopic.iconName}.svg`}
@@ -82,7 +80,7 @@ interface DesktopNavProps {
 export default function DesktopNav({ navItems }: DesktopNavProps) {
   return (
     <>
-      <nav className="ml-auto mr-20 hidden gap-10 lg:flex">
+      <nav className="ml-auto mr-20 hidden items-center gap-10 lg:flex">
         {navItems.map((navItem) => (
           <DesktopNavItem key={navItem.name} navItem={navItem} />
         ))}
